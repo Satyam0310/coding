@@ -5,9 +5,19 @@ int main(){
     cin>>n;
     for(int i=0;i<n;i++){
         cin>>a[i];
-        if(a[i]%5>=2){
-            cout<<"anjali is my bue";
-        }
     }
-    
+    for(int i=0;i<n;i++){
+        if(a[i]<38){
+            cout<<a[i]<<"\n";
+        }
+        else if(a[i]%5==4){
+            cout<<a[i]+1<<"\n";
+        }
+        else if(a[i]%5==3){
+            cout<<a[i]+2<<"\n";
+        }
+        else
+        cout<<a[i]<<"\n";
+    }
+    return 0;
 }
